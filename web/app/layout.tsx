@@ -3,6 +3,7 @@ import { Agentation } from 'agentation'
 import { Provider as JotaiProvider } from 'jotai/react'
 import { ThemeProvider } from 'next-themes'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
+import { branding } from '@/app/branding'
 import { IS_DEV } from '@/config'
 import GlobalPublicStoreProvider from '@/context/global-public-context'
 import { TanstackQueryInitializer } from '@/context/query-client'
@@ -16,6 +17,7 @@ import { ReactScanLoader } from './components/devtools/react-scan/loader'
 import { I18nServerProvider } from './components/provider/i18n-server'
 import SentryInitializer from './components/sentry-initializer'
 import RoutePrefixHandle from './routePrefixHandle'
+import './styles/branding.css'
 import './styles/globals.css'
 import './styles/markdown.scss'
 
@@ -38,23 +40,24 @@ const LocaleLayout = async ({
   return (
     <html lang={locale ?? 'en'} className="h-full" suppressHydrationWarning>
       <head>
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#1C64F2" />
+        <link rel="manifest" href={branding.manifestPath} />
+        <meta name="theme-color" content={branding.themeColor} />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Dify" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icon-192x192.png" />
-        <meta name="msapplication-TileColor" content="#1C64F2" />
-        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="apple-mobile-web-app-title" content={branding.applicationTitle} />
+        <link rel="apple-touch-icon" href={branding.appleTouchIconPath} />
+        <link rel="icon" type="image/png" sizes="32x32" href={branding.icon192Path} />
+        <link rel="icon" type="image/png" sizes="16x16" href={branding.icon192Path} />
+        <meta name="msapplication-TileColor" content={branding.themeColor} />
+        <meta name="msapplication-config" content={branding.browserConfigPath} />
 
         {/* <ReactGrabLoader /> */}
         <ReactScanLoader />
       </head>
       <body
         className="h-full select-auto"
+        data-branding={branding.brandId}
         {...datasetMap}
       >
         <div className="isolate h-full">

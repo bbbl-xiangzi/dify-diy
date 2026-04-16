@@ -1,0 +1,74 @@
+body[data-branding='client-ready'] {
+  background:
+    radial-gradient(circle at top left, rgb(15 118 110 / 0.16), transparent 32%),
+    radial-gradient(circle at top right, rgb(217 119 6 / 0.1), transparent 24%),
+    linear-gradient(180deg, rgb(248 250 252 / 0.98), rgb(241 245 249 / 0.98));
+}
+
+html[data-theme='light'] body[data-branding='client-ready'] {
+  --color-components-button-primary-bg: #0f766e;
+  --color-components-button-primary-bg-hover: #115e59;
+  --color-components-button-secondary-accent-text: #0f766e;
+  --color-components-checkbox-bg: #0f766e;
+  --color-components-checkbox-bg-hover: #115e59;
+  --color-components-radio-border-checked: #0f766e;
+  --color-components-radio-border-checked-hover: #115e59;
+  --color-components-toggle-bg: #0f766e;
+  --color-components-toggle-bg-hover: #115e59;
+  --color-components-menu-item-bg-active: rgb(15 118 110 / 0.12);
+  --color-components-main-nav-nav-button-text-active: #0f766e;
+  --color-components-main-nav-text-active: #115e59;
+  --color-components-main-nav-glass-edge-reflection-middle: rgb(15 118 110 / 0.55);
+  --color-components-main-nav-glass-surface-first: rgb(15 118 110 / 0.09);
+  --color-components-main-nav-glass-surface-middle-1: rgb(15 118 110 / 0.14);
+  --color-components-main-nav-glass-surface-middle-2: rgb(13 148 136 / 0.11);
+  --color-components-main-nav-glass-surface-end: rgb(217 119 6 / 0.08);
+  --color-components-main-nav-glass-shadow-reflection: rgb(15 118 110 / 0.08);
+  --color-components-main-nav-glass-text-glow: rgb(13 148 136 / 0.2);
+  --color-components-tab-active: #0f766e;
+  --color-components-option-card-option-selected-border: #0f766e;
+  --color-components-chart-line: #0f766e;
+  --color-components-chart-current-1: #0f766e;
+  --color-components-chart-current-2: #99f6e4;
+  --color-components-actionbar-bg-accent: #f0fdfa;
+  --color-components-actionbar-border-accent: #99f6e4;
+  --color-components-progress-brand-progress: #0f766e;
+  --color-components-progress-brand-border: #99f6e4;
+  --color-components-progress-brand-bg: rgb(15 118 110 / 0.14);
+}
+
+html[data-theme='dark'] body[data-branding='client-ready'] {
+  background:
+    radial-gradient(circle at top left, rgb(20 184 166 / 0.16), transparent 26%),
+    radial-gradient(circle at top right, rgb(245 158 11 / 0.1), transparent 20%),
+    linear-gradient(180deg, rgb(11 18 23 / 0.98), rgb(15 23 42 / 0.98));
+  --color-components-button-primary-bg: #0f766e;
+  --color-components-button-primary-bg-hover: #14b8a6;
+  --color-components-button-secondary-accent-text: rgb(204 251 241 / 0.95);
+  --color-components-checkbox-bg: #14b8a6;
+  --color-components-checkbox-bg-hover: #2dd4bf;
+  --color-components-radio-border-checked: #14b8a6;
+  --color-components-radio-border-checked-hover: #5eead4;
+  --color-components-toggle-bg: #14b8a6;
+  --color-components-toggle-bg-hover: #2dd4bf;
+  --color-components-menu-item-bg-active: rgb(20 184 166 / 0.18);
+  --color-components-main-nav-nav-button-text-active: #f0fdfa;
+  --color-components-main-nav-text-active: #f0fdfa;
+  --color-components-main-nav-glass-edge-reflection-middle: rgb(153 246 228 / 0.85);
+  --color-components-main-nav-glass-surface-first: rgb(20 184 166 / 0.12);
+  --color-components-main-nav-glass-surface-middle-1: rgb(94 234 212 / 0.14);
+  --color-components-main-nav-glass-surface-middle-2: rgb(245 158 11 / 0.08);
+  --color-components-main-nav-glass-surface-end: rgb(20 184 166 / 0.12);
+  --color-components-main-nav-glass-shadow-reflection: rgb(45 212 191 / 0.08);
+  --color-components-main-nav-glass-text-glow: rgb(240 253 250 / 0.3);
+  --color-components-tab-active: #2dd4bf;
+  --color-components-option-card-option-selected-border: #2dd4bf;
+  --color-components-chart-line: #2dd4bf;
+  --color-components-chart-current-1: #2dd4bf;
+  --color-components-chart-current-2: #115e59;
+  --color-components-actionbar-bg-accent: rgb(15 118 110 / 0.18);
+  --color-components-actionbar-border-accent: rgb(45 212 191 / 0.28);
+  --color-components-progress-brand-progress: #2dd4bf;
+  --color-components-progress-brand-border: rgb(45 212 191 / 0.32);
+  --color-components-progress-brand-bg: rgb(45 212 191 / 0.16);
+}
