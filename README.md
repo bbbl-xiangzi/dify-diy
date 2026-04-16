@@ -148,6 +148,8 @@ SUGGESTED_QUESTIONS_TEMPERATURE=0.3
 
 See the [Suggested Questions Configuration Guide](docs/suggested-questions-configuration.md) for detailed examples and usage instructions.
 
+See the [Client Branding Deployment Guide](docs/client-branding-deployment.md) for a client-ready setup path for customized frontend branding.
+
 ### Metrics Monitoring with Grafana
 
 Import the dashboard to Grafana, using Dify's PostgreSQL database as data source, to monitor metrics in granularity of apps, tenants, messages, and more.
