@@ -1,5 +1,6 @@
 'use client'
 import { useCallback } from 'react'
+import { branding, getBrandingTitle } from '@/app/branding'
 import DifyLogo from '@/app/components/base/logo/dify-logo'
 import WorkplaceSelector from '@/app/components/header/account-dropdown/workplace-selector'
 import { ACCOUNT_SETTING_TAB } from '@/app/components/header/account-setting/constants'
@@ -46,7 +47,7 @@ const Header = () => {
   const renderLogo = () => (
     <h1>
       <Link href="/apps" className="flex h-8 shrink-0 items-center justify-center overflow-hidden whitespace-nowrap px-0.5 indent-[-9999px]">
-        {isBrandingEnabled && systemFeatures.branding.application_title ? systemFeatures.branding.application_title : 'Dify'}
+        {getBrandingTitle(isBrandingEnabled ? systemFeatures.branding.application_title : branding.applicationTitle)}
         {systemFeatures.branding.enabled && systemFeatures.branding.workspace_logo
           ? (
               <img
