@@ -135,6 +135,8 @@ docker compose up -d
 
 如需交付带有客户 Logo、标题和品牌主题的定制版本，请参考[客户品牌化部署指南](./client-branding-deployment.md)。
 
+如需更短的交付入口和验收清单，请参考[客户品牌化快速操作手册](./client-branding-quickstart.md)。
+
 ### 使用 Grafana 进行指标监控
 
 将仪表板导入 Grafana，使用 Dify 的 PostgreSQL 数据库作为数据源，以监控应用、租户、消息等粒度的指标。
